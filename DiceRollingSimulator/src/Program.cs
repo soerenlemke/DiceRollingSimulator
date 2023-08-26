@@ -1,6 +1,4 @@
-﻿using DiceRollingSimulator.Models;
-
-var engine = new Engine();
+﻿var engine = new Engine();
 engine.WelcomePrint();
 
 Console.WriteLine("How many dices do you want to play with: ");
@@ -16,3 +14,5 @@ diceSet.Dices = engine.CreateDicesToPlay();
 engine.ShuffleDices(diceSet);
 
 foreach (var dice in diceSet.Dices) Console.WriteLine($"Dice {dice} has the number {dice.Number}");
+
+engine.CreateNumbersThrown(numberOfSides);

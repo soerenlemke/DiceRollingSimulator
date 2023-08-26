@@ -1,6 +1,6 @@
 namespace DiceRollingSimulator.Models;
 
-public class Engine
+public class Engine : GameStatistics
 {
     private readonly Random _random = new();
     private List<Dice> _dices;
@@ -10,7 +10,7 @@ public class Engine
     public void WelcomePrint()
     {
         Console.WriteLine("___________________________________");
-        Console.WriteLine("   Welcome to my DiceRollSimulator   ");
+        Console.WriteLine("  Welcome to my DiceRollSimulator   ");
         Console.WriteLine("___________________________________");
     }
 
