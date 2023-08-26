@@ -12,13 +12,7 @@ public class Dice
     public int Sides
     {
         get => _sides;
-        private set
-        {
-            if (value < 4)
-                _sides = 4;
-            else
-                _sides = value;
-        }
+        private set => _sides = value < 4 ? 4 : value;
     }
 
     public int Number { get; set; } = 0;

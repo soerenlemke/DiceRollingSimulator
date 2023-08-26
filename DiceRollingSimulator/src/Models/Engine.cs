@@ -2,11 +2,10 @@ namespace DiceRollingSimulator.Models;
 
 public class Engine
 {
+    private readonly Random _random = new();
     private List<Dice> _dices;
     private int _diceSides;
     private int _numberOfDices;
-
-    private readonly Random _random = new();
 
     public void WelcomePrint()
     {
