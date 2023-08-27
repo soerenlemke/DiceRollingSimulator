@@ -47,7 +47,3 @@ This is a C# console application designed to simulate dice rolling. Users can co
 ## License
 
 This project is open-source, available under [MIT License](LICENSE).
-
----
-
-Feel free to copy, edit, or modify this README as you see fit!
