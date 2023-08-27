@@ -29,8 +29,23 @@ public class Engine : GameStatistics
         return _dices;
     }
 
-    public void ShuffleDices(DiceSet diceSet)
+    public void ShuffleDices(DiceSet diceSet, int numberOfThrowsPerDice)
     {
-        foreach (var dice in diceSet.Dices) dice.Number = _random.Next(1, dice.Sides + 1);
+        for (int i = 0; i < numberOfThrowsPerDice; i++)
+        {
+            foreach (var dice in diceSet.Dices)
+            {
+                dice.Number = _random.Next(1, dice.Sides + 1);
+
+                if (NumbersThrown.ContainsKey(dice.Number))
+                {
+                    NumbersThrown[dice.Number]++;
+                }
+                else
+                {
+                    NumbersThrown.Add(dice.Number, 1);
+                }
+            }
+        }
     }
 }
