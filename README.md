@@ -1,7 +1,3 @@
-Certainly! Below is a template README.md file for your GitHub repository:
-
----
-
 # Dice Rolling Simulator
 
 ## About
