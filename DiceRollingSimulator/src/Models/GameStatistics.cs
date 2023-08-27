@@ -4,7 +4,7 @@ public class GameStatistics
 {
     public Dictionary<int, int> NumbersThrown { get; set; } = new();
 
-    public void CreateNumbersThrown(int numberOfSidesPerDice)
+    public void CreateNumbersThatCanBeThrown(int numberOfSidesPerDice)
     {
         for (var i = 1; i <= numberOfSidesPerDice; i++) NumbersThrown.Add(i, 0);
     }

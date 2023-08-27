@@ -10,7 +10,7 @@ var numberOfSides = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("How many throws do you want per dice: ");
 var numberOfThrowsPerDice = Convert.ToInt32(Console.ReadLine());
 
-engine.CreateNumbersThrown(numberOfSides);
+engine.CreateNumbersThatCanBeThrown(numberOfSides);
 engine.SetupGame(numberOfDices, numberOfSides);
 
 var diceSet = new DiceSet();
