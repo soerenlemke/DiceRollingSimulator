@@ -16,3 +16,5 @@ engine.ShuffleDices(diceSet);
 foreach (var dice in diceSet.Dices) Console.WriteLine($"Dice {dice} has the number {dice.Number}");
 
 engine.CreateNumbersThrown(numberOfSides);
+engine.GetNumbersThrown(diceSet);
+engine.PrintNumbersThrown();
